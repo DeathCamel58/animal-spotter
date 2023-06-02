@@ -27,6 +27,7 @@
   </NavBrand>
   {#if $isAuthenticated}
     <div class="flex items-center md:order-2">
+      <!-- TODO: Fix the image sometimes giving a 403 error. -->
       <Avatar id="avatar-menu" src="{$user.picture ? $user.picture : 'https://picsum.photos/96/96'}" />
       <NavHamburger on:click={toggle} class1="w-full md:flex md:w-auto md:order-1"/>
     </div>
